@@ -91,7 +91,7 @@ export default function Skills() {
             style={{
               display: 'flex',
               gap: '3rem',
-              animation: 'scroll 30s linear infinite',
+              animation: 'scroll 60s linear infinite',
               width: 'fit-content'
             }}
           >
