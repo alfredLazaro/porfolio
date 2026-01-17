@@ -13,7 +13,7 @@ export default function Navigation() {
     setIsMenuOpen(false);
   };
 
-  const menuItems = ['About', 'Skills', 'Projects', 'Contact'];
+  const menuItems = ['About', 'Skills', 'Projects'];
 
   return (
     <nav 
