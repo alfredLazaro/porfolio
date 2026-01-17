@@ -2,23 +2,23 @@ import { Project, SkillSet, PersonalInfo, WorkExperience, Education } from '../t
 
 export const personalInfo: PersonalInfo = {
   // Your full name
-  name: "John Doe",
+  name: "Alfredo Lazaro Poma",
   
   // Your professional title/role
-  title: "Full Stack Developer | React & TypeScript Specialist",
+  title: "Ingeniero de Software",
   
   // Brief bio (2-4 sentences about you, your passion, and what you do)
   about: "Passionate full-stack developer with 3+ years of experience building modern web applications. I specialize in React, TypeScript, and Node.js, with a focus on creating scalable, user-friendly solutions. I love tackling complex problems and continuously learning new technologies to deliver exceptional results.",
   
   // Your social/professional links
-  github: "https://github.com/yourusername",
-  linkedin: "https://linkedin.com/in/yourusername",
-  email: "your.email@example.com",
+  github: "https://github.com/alfredLazaro?tab=repositories",
+  linkedin: "https://www.linkedin.com/in/alfredo-lazaro-poma-24a317267/",
+  email: "alfredolazaro999@gmail.com",
   
-  // Optional links
+  /* // Optional links
   twitter: "https://twitter.com/yourusername",
   website: "https://yourwebsite.com",
-  resume: "/path/to/your-resume.pdf"
+  resume: "/path/to/your-resume.pdf" */
 };
 
 export const projects: Project[] = [
@@ -58,20 +58,6 @@ export const projects: Project[] = [
       "Custom notification system"
     ]
   },
-  {
-    title: "Weather Analytics Platform",
-    description: "Weather dashboard with historical data, forecasts, and interactive visualizations. Aggregates data from multiple weather APIs.",
-    tech: ["React", "TypeScript", "Recharts", "OpenWeather API", "Vite"],
-    github: "https://github.com/yourusername/weather-dashboard",
-    demo: "https://your-weather-app.vercel.app"
-  },
-  {
-    title: "Portfolio Website Builder",
-    description: "SaaS platform allowing users to create and customize their portfolio websites without coding. Includes drag-and-drop editor.",
-    tech: ["React", "TypeScript", "Node.js", "AWS S3", "Prisma"],
-    github: "https://github.com/yourusername/portfolio-builder",
-    demo: "https://portfolio-builder-demo.vercel.app"
-  }
 ];
 
 export const skills: SkillSet[] = [
@@ -83,9 +69,7 @@ export const skills: SkillSet[] = [
       "JavaScript (ES6+)",
       "Next.js",
       "HTML5 & CSS3",
-      "Tailwind CSS",
-      "Redux/Zustand",
-      "React Query"
+      "Tailwind CSS"
     ]
   },
   {
@@ -93,20 +77,13 @@ export const skills: SkillSet[] = [
     items: [
       "Node.js",
       "Express.js",
-      "Python",
       "REST APIs",
-      "GraphQL",
-      "WebSockets",
-      "Microservices"
     ]
   },
   {
     category: "Database",
     items: [
       "PostgreSQL",
-      "MongoDB",
-      "Firebase",
-      "Redis",
       "Prisma ORM",
       "SQL"
     ]
@@ -115,12 +92,7 @@ export const skills: SkillSet[] = [
     category: "Tools & DevOps",
     items: [
       "Git & GitHub",
-      "Docker",
-      "AWS/Vercel",
-      "CI/CD",
-      "Jest/Vitest",
-      "Webpack/Vite",
-      "Linux/Bash"
+      "Docker"
     ]
   }
 ];
@@ -165,9 +137,9 @@ export const workExperience: WorkExperience[] = [
 // Optional: Education
 export const education: Education[] = [
   {
-    institution: "University of Technology",
+    institution: "Universidad Mayor de San Simon",
     degree: "Bachelor of Science in Computer Science",
-    period: "2016 - 2020",
+    period: "2018 - 2025",
     description: "Focus on Software Engineering and Web Development. GPA: 3.8/4.0"
   },
   {
