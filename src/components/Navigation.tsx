@@ -1,9 +1,9 @@
 // ============================================
-// src/components/Navigation.tsx
+// src/components/Navigation.tsx - IMPROVED
 // ============================================
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import { personalInfo } from '../data/portfolioData.ts';
+import { personalInfo } from '../data/portfolioData';
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,45 +16,95 @@ export default function Navigation() {
   const menuItems = ['About', 'Skills', 'Projects', 'Contact'];
 
   return (
-    <nav className="fixed w-full bg-gray-900/95 backdrop-blur-md z-50 border-b border-gray-800/50 shadow-lg">
-      <div className="max-w-6xl mx-auto px-4 py-4">
-        <div className="flex justify-between items-center">
-          <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent hover:from-blue-300 hover:to-purple-400 transition-all cursor-pointer">
+    <nav 
+      style={{
+        position: 'fixed',
+        width: '100%',
+        top: 0,
+        zIndex: 50,
+        backgroundColor: 'rgba(17, 24, 39, 0.95)',
+        backdropFilter: 'blur(12px)',
+        borderBottom: '1px solid rgba(75, 85, 99, 0.3)',
+        boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.3)'
+      }}
+    >
+      <div style={{ maxWidth: '1152px', margin: '0 auto', padding: '1rem' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <h1 
+            style={{
+              fontSize: '1.5rem',
+              fontWeight: 'bold',
+              background: 'linear-gradient(to right, #60a5fa, #a78bfa)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              cursor: 'pointer'
+            }}
+          >
             {personalInfo.name.split(' ')[0]}
           </h1>
           
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8">
+          <div style={{ display: 'none' }} className="md:flex md:gap-8">
             {menuItems.map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
-                className="relative text-gray-300 hover:text-blue-400 transition-colors font-medium group"
+                style={{
+                  color: '#d1d5db',
+                  fontWeight: '500',
+                  padding: '0.5rem 0',
+                  background: 'none',
+                  border: 'none',
+                  cursor: 'pointer',
+                  fontSize: '1rem',
+                  transition: 'color 0.3s'
+                }}
+                onMouseEnter={(e) => e.currentTarget.style.color = '#60a5fa'}
+                onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}
               >
                 {item}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-purple-500 group-hover:w-full transition-all duration-300"></span>
               </button>
             ))}
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            style={{
+              background: 'none',
+              border: 'none',
+              color: 'white',
+              cursor: 'pointer',
+              padding: '0.5rem'
+            }}
+            className="md:hidden"
             aria-label="Toggle menu"
           >
-            {isMenuOpen ? <X /> : <Menu />}
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 space-y-4">
+          <div style={{ marginTop: '1rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             {menuItems.map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
-                className="block w-full text-left hover:text-blue-400 transition-colors"
+                style={{
+                  textAlign: 'left',
+                  width: '100%',
+                  color: '#d1d5db',
+                  background: 'none',
+                  border: 'none',
+                  cursor: 'pointer',
+                  fontSize: '1rem',
+                  padding: '0.5rem 0',
+                  transition: 'color 0.3s'
+                }}
+                onMouseEnter={(e) => e.currentTarget.style.color = '#60a5fa'}
+                onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}
               >
                 {item}
               </button>
