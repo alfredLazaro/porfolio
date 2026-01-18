@@ -1,5 +1,5 @@
 // ============================================
-// src/components/Hero.tsx - IMPROVED
+// src/components/Hero.tsx - COMPACT VERSION
 // ============================================
 import { Github, Linkedin, Mail, Twitter, Globe, FileText } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
@@ -8,17 +8,17 @@ export default function Hero() {
   return (
     <section 
       style={{
-        paddingTop: '6rem',
-        paddingBottom: '3rem',
-        padding: '6rem 1rem 3rem 1rem'
+        paddingTop: '5rem',
+        paddingBottom: '1.5rem',
+        padding: '5rem 1rem 1.5rem 1rem'
       }}
     >
       <div style={{ maxWidth: '1152px', margin: '0 auto', textAlign: 'center' }}>
         <h2 
           style={{
-            fontSize: 'clamp(2rem, 5vw, 2.5rem)',
+            fontSize: 'clamp(1.5rem, 4vw, 2rem)',
             fontWeight: 'bold',
-            marginBottom: '1rem',
+            marginBottom: '0.5rem',
             background: 'linear-gradient(to right, #60a5fa, #a78bfa)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
@@ -28,11 +28,11 @@ export default function Hero() {
           {personalInfo.name}
         </h2>
         
-        <p style={{ fontSize: '1.125rem', color: '#d1d5db', marginBottom: '1.5rem' }}>
+        <p style={{ fontSize: '1rem', color: '#d1d5db', marginBottom: '1rem' }}>
           {personalInfo.title}
         </p>
         
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '1.5rem', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
           <a 
             href={personalInfo.github} 
             target="_blank" 
@@ -42,7 +42,7 @@ export default function Hero() {
             onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}
             aria-label="GitHub Profile"
           >
-            <Github size={24} />
+            <Github size={20} />
           </a>
           <a 
             href={personalInfo.linkedin} 
@@ -53,7 +53,7 @@ export default function Hero() {
             onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}
             aria-label="LinkedIn Profile"
           >
-            <Linkedin size={24} />
+            <Linkedin size={20} />
           </a>
           <a 
             href={`mailto:${personalInfo.email}`}
@@ -62,7 +62,7 @@ export default function Hero() {
             onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}
             aria-label="Email"
           >
-            <Mail size={24} />
+            <Mail size={20} />
           </a>
           {personalInfo.twitter && (
             <a 
@@ -74,7 +74,7 @@ export default function Hero() {
               onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}
               aria-label="Twitter Profile"
             >
-              <Twitter size={24} />
+              <Twitter size={20} />
             </a>
           )}
           {personalInfo.website && (
@@ -87,7 +87,7 @@ export default function Hero() {
               onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}
               aria-label="Personal Website"
             >
-              <Globe size={24} />
+              <Globe size={20} />
             </a>
           )}
           {personalInfo.resume && (
@@ -100,7 +100,7 @@ export default function Hero() {
               onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}
               aria-label="Download Resume"
             >
-              <FileText size={24} />
+              <FileText size={20} />
             </a>
           )}
         </div>

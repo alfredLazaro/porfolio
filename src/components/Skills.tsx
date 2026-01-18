@@ -68,7 +68,7 @@ export default function Skills() {
           style={{
             fontSize: '1.25rem',
             fontWeight: '600',
-            marginBottom: '1.5rem',
+            marginBottom: '1rem',
             textAlign: 'center',
             color: '#d1d5db'
           }}
@@ -90,7 +90,7 @@ export default function Skills() {
           <div 
             style={{
               display: 'flex',
-              gap: '3rem',
+              gap: '2rem',
               animation: 'scroll 60s linear infinite',
               width: 'fit-content'
             }}
@@ -121,8 +121,8 @@ export default function Skills() {
                   src={getIconUrl(skill)}
                   alt={skill}
                   style={{
-                    width: '38px',
-                    height: '38px',
+                    width: '30px',
+                    height: '30px',
                     objectFit: 'contain',
                     filter: 'grayscale(100%) brightness(0.8)',
                     transition: 'filter 0.3s'

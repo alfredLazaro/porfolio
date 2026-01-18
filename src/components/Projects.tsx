@@ -9,7 +9,7 @@ export default function Projects() {
     <section 
       id="projects"
       style={{
-        padding: '4rem 1rem',
+        padding: '2rem 1rem',
         backgroundColor: 'rgba(31, 41, 55, 0.5)'
       }}
     >
@@ -18,12 +18,12 @@ export default function Projects() {
           style={{
             fontSize: '2.25rem',
             fontWeight: 'bold',
-            marginBottom: '2.5rem',
+            marginBottom: '1rem',
             textAlign: 'center',
             color: 'white'
           }}
         >
-          Featured Projects
+          Proyectos Destacados
         </h3>
         
         <div 
