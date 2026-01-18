@@ -8,11 +8,9 @@ export const personalInfo: PersonalInfo = {
   title: "Ingeniero de Software",
   
   // Brief bio (2-4 sentences about you, your passion, and what you do)
-  about: "Passionate full-stack developer with 3+ years of experience building modern web applications. I specialize in React, TypeScript, and Node.js, with a focus on creating scalable, user-friendly solutions. I love tackling complex problems and continuously learning new technologies to deliver exceptional results.",
-  
-  // Your social/professional links
+about: "Desarrollador full-stack con experiencia construyendo aplicaciones web modernas. Mi objetivo es alcanzar un nivel experto en desarrollo backend, con especial énfasis en arquitectura de software y eficiencia de sistemas. Me apasiona diseñar soluciones robustas y bien estructuradas que optimicen el rendimiento y la mantenibilidad del código.",  // Your social/professional links
   github: "https://github.com/alfredLazaro?tab=repositories",
-  linkedin: "https://www.linkedin.com/in/alfredo-lazaro-poma-24a317267/",
+  linkedin: "https://www.linkedin.com/in/alfredo-lazaro-poma-24a317267",
   email: "alfredolazaro999@gmail.com",
   
   /* // Optional links
@@ -23,35 +21,35 @@ export const personalInfo: PersonalInfo = {
 
 export const projects: Project[] = [
   {
-    title: "E-Commerce Platform",
-    description: "Full-featured e-commerce platform with shopping cart, payment integration, and admin dashboard. Handles 10k+ daily users with optimized performance.",
-    tech: ["React", "TypeScript", "Node.js", "MongoDB", "Stripe", "Redis"],
-    github: "https://github.com/yourusername/ecommerce-platform",
-    demo: "https://your-ecommerce-demo.vercel.app",
+    title: "LearnCpp",
+    description: "Aplicacion enfocada en el aprendizaje de algoritmo.",
+    tech: ["React", "TypeScript", "Node.js", "PostgreSQL"],
+    github: "https://github.com/alfredLazaro/project-grado",
+    demo: "https://project-learncp.vercel.app/",
     highlights: [
-      "Reduced page load time by 60% through code splitting",
-      "Integrated Stripe for secure payment processing",
-      "Built admin panel for inventory management"
+      "Recopilacion de informacion de varias fuentes de algoritmia",
+      "Ejemplos practicos sobre problemas",
+      "Enlaces de fuentes relacionadas con mayor informacion",
     ]
   },
   {
-    title: "Real-Time Chat Application",
-    description: "Scalable chat app with real-time messaging, file sharing, and video calls. Built with WebSocket for instant communication.",
-    tech: ["React", "TypeScript", "Socket.io", "WebRTC", "Express", "PostgreSQL"],
-    github: "https://github.com/yourusername/chat-app",
-    demo: "https://your-chat-app.vercel.app",
+    title: "Sansi Check API",
+    description: "API para el manejo de horarios y marcado de asistencia con reconocimiento Facial",
+    tech: ["SpringBoot","Java","Swagger","PostgreSQL"],
+    github: "https://github.com/alfredLazaro/sistemaAsistencia",
+    demo: "",
     highlights: [
-      "Supports 1000+ concurrent users",
-      "End-to-end encrypted messaging",
-      "Video call integration with WebRTC"
+      "Adminstracion de Usuarios via JWT y Spring Security",
+      "Seguridad por parte de endpoint y documentacion",
+      "Se sigue los principios SOLID"
     ]
   },
   {
-    title: "Task Management Dashboard",
-    description: "Collaborative project management tool with drag-and-drop interface, real-time updates, and team collaboration features.",
-    tech: ["React", "TypeScript", "Firebase", "Tailwind CSS", "DnD Kit"],
-    github: "https://github.com/yourusername/task-manager",
-    demo: "https://your-task-manager.vercel.app",
+    title: "English App",
+    description: "Aplicacion Movil desarrollada para el aprendisaje autonomo de ingles, esta desarrollada con diferentes apis gratuitas.",
+    tech: ["Flutter", "Dart", "Sqlite"],
+    github: "https://github.com/alfredLazaro/appIngles/tree/master",
+    demo: "",
     highlights: [
       "Drag-and-drop Kanban board interface",
       "Real-time collaboration with Firebase",
@@ -75,6 +73,8 @@ export const skills: SkillSet[] = [
   {
     category: "Backend",
     items: [
+      "Spring Boot",
+      "Laravel",
       "Node.js",
       "Express.js",
       "REST APIs",
@@ -153,9 +153,9 @@ export const education: Education[] = [
 // Optional: Certifications
 export const certifications = [
   {
-    name: "AWS Certified Developer - Associate",
-    issuer: "Amazon Web Services",
-    date: "2023",
+    name: "",
+    issuer: "Cisco",
+    date: "2025",
     url: "https://aws.amazon.com/certification/"
   },
   {

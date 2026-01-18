@@ -121,8 +121,8 @@ export default function Skills() {
                   src={getIconUrl(skill)}
                   alt={skill}
                   style={{
-                    width: '48px',
-                    height: '48px',
+                    width: '38px',
+                    height: '38px',
                     objectFit: 'contain',
                     filter: 'grayscale(100%) brightness(0.8)',
                     transition: 'filter 0.3s'
